@@ -1,0 +1,6 @@
+{
+  "parent": "simple_rapier:item/rapier",
+  "textures": {
+    "0": "simple_rapier:item/netherite_sword"
+  }
+}

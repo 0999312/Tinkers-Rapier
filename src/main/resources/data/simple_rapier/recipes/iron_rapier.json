@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  S",
+    "AA ",
+    "PL "
+  ],
+  "key": {
+    "P": {
+      "tag": "forge:rods/wooden"
+    },
+    "L": {
+      "tag": "forge:leather"
+    },
+    "A": {
+      "tag": "forge:ingots/iron"
+    },
+    "S": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "simple_rapier:iron_rapier"
+  }
+}

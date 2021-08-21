@@ -1,0 +1,9 @@
+{
+    "item.simple_rapier.wooden_rapier":"木西洋剑",
+    "item.simple_rapier.stone_rapier":"石西洋剑",
+    "item.simple_rapier.iron_rapier":"铁西洋剑",
+    "item.simple_rapier.golden_rapier":"金西洋剑",
+    "item.simple_rapier.diamond_rapier":"钻石西洋剑",
+    "item.simple_rapier.netherite_rapier":"下界合金西洋剑",
+    "itemGroup.simple_rapier":"简单西洋剑"
+}

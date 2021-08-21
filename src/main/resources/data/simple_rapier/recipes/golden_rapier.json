@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  S",
+    "AA ",
+    "PL "
+  ],
+  "key": {
+    "P": {
+      "tag": "forge:rods/wooden"
+    },
+    "L": {
+      "tag": "forge:leather"
+    },
+    "A": {
+      "tag": "forge:ingots/gold"
+    },
+    "S": {
+      "item": "minecraft:golden_sword"
+    }
+  },
+  "result": {
+    "item": "simple_rapier:golden_rapier"
+  }
+}

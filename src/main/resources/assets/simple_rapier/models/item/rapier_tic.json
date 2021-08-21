@@ -1,0 +1,16 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "simple_rapier:item/rapier",
+  "textures": {
+    "head":        "simple_rapier:item/tic_rapier/blade",
+    "broken_head": "simple_rapier:item/tic_rapier/broken_blade",
+    "handguard":  "simple_rapier:item/tic_rapier/handguard",
+	"handle":  "simple_rapier:item/tic_rapier/handle"
+  },
+  
+  "parts": [
+    { "name": "head",       "index": 0, "broken": "broken_head" },
+    { "name": "handguard", "index": 2 },
+	{ "name": "handle", "index": 3 }
+  ]
+}
