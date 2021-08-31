@@ -1,0 +1,9 @@
+{
+    "slots": [
+        { "position": [ 12, 26 ] },
+        { "position": [ 30, 44 ] },
+        { "position": [ 48, 62 ] }
+    ],
+    "item": "tinker_rapier:rapier_tic",
+    "sortIndex": 114
+}

@@ -3,9 +3,9 @@ loaderVersion="[36,)"
 license="MIT License"
 issueTrackerURL="https://github.com/0999312/Simple-Rapier/issues"
 [[mods]] #mandatory
-modId="simple_rapier"
+modId="tinker_rapier"
 version="${file.jarVersion}"
-displayName="Simple Rapier" #mandatory
+displayName="Tinkers' Rapier" #mandatory
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
 #logoFile="rapier.png" #optional
@@ -13,11 +13,10 @@ credits="Thanks All contributors of TiC"
 authors="MCMOD Modding Group" 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-We brought back the Rapier in TiC!
-
+We brought back the Rapier to TiC 3!
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.simple_rapier]] #optional
+[[dependencies.tinker_rapier]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -29,10 +28,16 @@ We brought back the Rapier in TiC!
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
 # Here's another dependency
-[[dependencies.simple_rapier]]
+[[dependencies.tinker_rapier]]
     modId="minecraft"
     mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
     versionRange="[1.16.5,1.17)"
     ordering="NONE"
+    side="BOTH"
+[[dependencies.tinker_rapier]]
+    modId="tconstruct"
+    mandatory=true
+    versionRange="[1.16.5-3.1.2.265, )"
+    ordering="AFTER"
     side="BOTH"

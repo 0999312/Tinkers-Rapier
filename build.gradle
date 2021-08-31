@@ -13,8 +13,8 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 version = '1.0.0-1.16.5'
-group = 'cn.mcmod.simple_rapier' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'simple_rapier'
+group = 'cn.mcmod.tinker_rapier' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'tinker_rapier'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(8) // Mojang ships Java 8 to end users, so your mod should target Java 8.
 
@@ -55,7 +55,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                simple_rapier {
+                tinker_rapier {
                     source sourceSets.main
                 }
             }
@@ -77,7 +77,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                simple_rapier {
+                tinker_rapier {
                     source sourceSets.main
                 }
             }
@@ -99,10 +99,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', 'simple_rapier', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'tinker_rapier', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
-                simple_rapier {
+                tinker_rapier {
                     source sourceSets.main
                 }
             }
@@ -135,15 +135,15 @@ dependencies {
 	// at runtime, use the full JEI jar
 	runtimeOnly fg.deobf("mezz.jei:jei-1.16.5:7.6.1.75")
 	
-	compile fg.deobf("slimeknights.mantle:Mantle:1.16.5-1.6.116")
-    compile fg.deobf("slimeknights.tconstruct:TConstruct:1.16.5-3.1.1.252")
+	compile fg.deobf("slimeknights.mantle:Mantle:1.16.5-1.6.123")
+    compile fg.deobf("slimeknights.tconstruct:TConstruct:1.16.5-3.1.2.265")
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
 jar {
     manifest {
         attributes([
-            "Specification-Title": "simple_rapier",
+            "Specification-Title": "tinker_rapier",
             "Specification-Vendor": "mcmod_group",
             "Specification-Version": "1", // We are version 1 of ourselves
             "Implementation-Title": project.name,
