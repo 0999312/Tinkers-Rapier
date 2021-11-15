@@ -1,8 +1,9 @@
 {
     "slots": [
-        { "position": [ 12, 26 ] },
-        { "position": [ 30, 44 ] },
-        { "position": [ 48, 62 ] }
+        { "position": [ 26, 26 ] },
+        { "position": [ 44, 44 ] },
+        { "position": [ 62, 62 ] },
+        { "position": [ 72, 72 ] }
     ],
     "item": "tinker_rapier:rapier_tic",
     "sortIndex": 114

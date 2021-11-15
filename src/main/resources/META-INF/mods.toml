@@ -38,6 +38,6 @@ We brought back the Rapier to TiC 3!
 [[dependencies.tinker_rapier]]
     modId="tconstruct"
     mandatory=true
-    versionRange="[1.16.5-3.1.2.265, )"
+    versionRange="[1.16.5-3.2.0.290, )"
     ordering="AFTER"
     side="BOTH"

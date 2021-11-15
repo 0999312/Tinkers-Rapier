@@ -43,26 +43,38 @@ public class RapierUtil {
         return new ActionResult<>(result, itemStackIn);
     }
     
-    public static void DoStingAttack(ItemStack stack, float baseDamage, float exDamage, LivingEntity attacker,
-            LivingEntity target) {
-        if (!target.hasItemInSlot(EquipmentSlotType.CHEST)) {
-            boolean isPlayer = attacker instanceof PlayerEntity;
-            float f = baseDamage, f1 = exDamage;
-            if(isPlayer) {
-                float f2 = ((PlayerEntity) attacker).getAttackStrengthScale(0.5F);
-                f = f * (0.2F + f2 * f2 * 0.8F);
-                f1 = f1 * f2;
+    public static void DoStingAttack(ItemStack stack, float baseDamage, float exDamage, LivingEntity attacker, LivingEntity target) {
+        boolean isPlayer = attacker instanceof PlayerEntity;
+        float f = baseDamage, f1 = exDamage;
+        if(isPlayer) {
+            float f2 = ((PlayerEntity) attacker).getAttackStrengthScale(0.5F);
+            f = f * (0.2F + f2 * f2 * 0.8F);
+            f1 = f1 * f2;
+        }
+        f += f1;
+        if (RapierConfig.CLASSIC_ATK.get()) {
+            f *= 0.5F;
+            boolean flag5 = isPlayer
+                    ? target.hurt(DamageSource.playerAttack((PlayerEntity) attacker).bypassArmor().bypassMagic(), f)
+                    : target.hurt(DamageSource.mobAttack(attacker).bypassArmor().bypassMagic(), f);
+            if (flag5) {
+                // don't prevent main damage from applying
+                target.invulnerableTime = 0;
+                target.hurtTime = 0;
+                target.level.playSound(null, target, SoundEvents.ANVIL_HIT, target.getSoundSource(), Math.max(1.0F, f), (target.getRandom().nextFloat() - target.getRandom().nextFloat()) * 0.5F + 1.0F);
             }
-            f += f1;
+        }
+        else if (!target.hasItemInSlot(EquipmentSlotType.CHEST)) {
             boolean flag5 = isPlayer
                     ? target.hurt(DamageSource.playerAttack((PlayerEntity) attacker), f)
                     : target.hurt(DamageSource.mobAttack(attacker), f);
             if (flag5) {
                 // don't prevent main damage from applying
                 target.invulnerableTime = 0;
+                target.hurtTime = 0;
                 target.level.playSound(null, target, SoundEvents.PLAYER_HURT_SWEET_BERRY_BUSH, target.getSoundSource(), Math.max(1.0F, f), (target.getRandom().nextFloat() - target.getRandom().nextFloat()) * 0.5F + 1.0F);
             }
         }
-
     }
+
 }
