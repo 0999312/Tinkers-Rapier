@@ -1,5 +1,12 @@
 {
-    "item.tinker_rapier.rapier_tic":"西洋剑",
-    "item.tinker_rapier.rapier_tic.description":"西洋剑是种特制武器，依靠快速的刺击来打败对手。",
+	"item.tinker_rapier.slender_blade":"细剑刃",
+	"item.tinker_rapier.slender_blade_cast":"细剑刃金质铸模",
+	"item.tinker_rapier.slender_blade_sand_cast":"细剑刃沙子铸模",
+	"item.tinker_rapier.slender_blade_red_sand_cast":"细剑刃红沙铸模",
+	
+    "item.tinker_rapier.rapier_tic":"迅捷剑",
+    "item.tinker_rapier.rapier_tic.description":"迅捷剑是种决斗特化武器，依靠快速的刺击来打败没有胸甲的对手。",
+    "item.tinker_rapier.estoc_tic":"破甲剑",
+    "item.tinker_rapier.estoc_tic.description":"破甲剑是种对护甲特化武器，依靠细长的剑身刺穿敌人的护甲。",
     "itemGroup.tinker_rapier":"工匠西洋剑"
 }

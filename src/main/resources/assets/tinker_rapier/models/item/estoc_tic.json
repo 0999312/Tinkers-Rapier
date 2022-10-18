@@ -1,0 +1,37 @@
+{
+  "loader" : "tconstruct:tool",
+  "parent" : "forge:item/default-tool",
+  "textures" : {
+    "head" : "tinker_rapier:item/tool/estoc/blade",
+    "broken_head" : "tinker_rapier:item/tool/estoc/broken_blade",
+    "guard_estoc" : "tinker_rapier:item/tool/estoc/guard_estoc",
+    "handle" : "tinker_rapier:item/tool/estoc/handle"
+  },
+  "modifier_roots" : [ "tinker_rapier:item/tool/rapier/modifiers/" ],
+  "parts" : [ {
+    "name" : "handle",
+    "index" : 2
+  }, {
+    "name" : "head",
+    "index" : 0,
+    "broken" : "broken_head"
+  }, {
+    "name" : "guard_estoc",
+    "index" : 1
+  }],
+  "display" : {
+    "gui" : {
+      "rotation" : [ 0, 0, 90 ]
+    },
+    "firstperson_righthand" : {
+      "rotation" : [ 0, 90, -25 ],
+      "translation" : [ 0, 2, 0.8 ],
+      "scale" : [ 0.75, 0.75, 0.75 ]
+    },
+    "firstperson_lefthand" : {
+      "rotation" : [ 0, -90, 25 ],
+      "translation" : [ 0, 2, 0.8 ],
+      "scale" : [ 0.75, 0.75, 0.75 ]
+    }
+  }
+}

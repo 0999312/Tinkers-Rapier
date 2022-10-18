@@ -1,5 +1,12 @@
 {
+	"item.tinker_rapier.slender_blade":"Slender Blade",
+	"item.tinker_rapier.slender_blade_cast":"Slender Blade Gold Cast",
+	"item.tinker_rapier.slender_blade_sand_cast":"Slender Blade Sand Cast",
+	"item.tinker_rapier.slender_blade_red_sand_cast":"Slender Blade Red Sand Cast",
+
     "item.tinker_rapier.rapier_tic":"Rapier",
     "item.tinker_rapier.rapier_tic.description":"The Rapier is a special weapon that relies on quick strikes to defeat foes.",
+    "item.tinker_rapier.estoc_tic":"Estoc",
+    "item.tinker_rapier.estoc_tic.description":"The Estoc is an armor-specific weapon, relying on the slender blade to pierce the enemy's armor.",
     "itemGroup.tinker_rapier":"Tinker's Rapier"
 }

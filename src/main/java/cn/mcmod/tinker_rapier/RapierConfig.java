@@ -4,15 +4,12 @@ import net.minecraftforge.common.ForgeConfigSpec;
 
 public class RapierConfig {
     public static ForgeConfigSpec COMMON_CONFIG;
-    public static ForgeConfigSpec.BooleanValue CLASSIC_ATK;
-    public static ForgeConfigSpec.DoubleValue RAPIER_DURABILITY;
+    public static ForgeConfigSpec.DoubleValue RAPIER_ATTACK_BOUNS;
     static {
         ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();
         COMMON_BUILDER.comment("General settings").push("general");
-        CLASSIC_ATK = COMMON_BUILDER.comment("Is the rapier attack like classic TiC (Armor-piercing)")
-                .define("classic_attack", false);
-        RAPIER_DURABILITY = COMMON_BUILDER.comment("the durability multiplier of Rapier")
-                .defineInRange("rapier_durability", 0.75D, 0.1D, 2D);
+        RAPIER_ATTACK_BOUNS = COMMON_BUILDER.comment("the sting attack multiplier of Rapiers")
+                .defineInRange("rapier_attack_bouns", 1D, 0.01D, 10D);
         COMMON_BUILDER.pop();
         COMMON_CONFIG = COMMON_BUILDER.build();
     }

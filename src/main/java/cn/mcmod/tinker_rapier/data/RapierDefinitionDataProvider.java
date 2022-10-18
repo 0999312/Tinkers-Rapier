@@ -1,6 +1,6 @@
 package cn.mcmod.tinker_rapier.data;
 
-import cn.mcmod.tinker_rapier.RapierConfig;
+import cn.mcmod.tinker_rapier.item.EstocTiC;
 import cn.mcmod.tinker_rapier.item.RapierTiC;
 import net.minecraft.data.DataGenerator;
 import slimeknights.tconstruct.library.data.tinkering.AbstractToolDefinitionDataProvider;
@@ -22,15 +22,26 @@ public class RapierDefinitionDataProvider extends AbstractToolDefinitionDataProv
     @Override
     protected void addToolDefinitions() {
         define(RapierTiC.RAPIER)
-            .part(TinkerToolParts.smallBlade)
+            .part(TinkerToolParts.broadBlade)
             .part(TinkerToolParts.largePlate)
             .part(TinkerToolParts.toughHandle)
             .part(TinkerToolParts.toolHandle)
-            .stat(ToolStats.ATTACK_DAMAGE, 1.25f)
-            .stat(ToolStats.ATTACK_SPEED, 3.0f)
+            .stat(ToolStats.ATTACK_DAMAGE, 1.5f)
+            .stat(ToolStats.ATTACK_SPEED, 2.75f)
             .stat(ToolStats.MINING_SPEED, 0.75f)
-            .stat(ToolStats.DURABILITY, RapierConfig.RAPIER_DURABILITY.get().floatValue())
+            .stat(ToolStats.DURABILITY, 0.75F)
             .largeToolStartingSlots()
+            .trait(TinkerModifiers.silkyShears);
+        
+        define(EstocTiC.ESTOC)
+            .part(TinkerToolParts.broadBlade)
+            .part(TinkerToolParts.toughHandle)
+            .part(TinkerToolParts.toolHandle)
+            .stat(ToolStats.ATTACK_DAMAGE, 2.5f)
+            .stat(ToolStats.ATTACK_SPEED, 2.00f)
+            .stat(ToolStats.MINING_SPEED, 0.75f)
+            .stat(ToolStats.DURABILITY, 1.00F)
+            .smallToolStartingSlots()
             .trait(TinkerModifiers.silkyShears);
     }
 

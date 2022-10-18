@@ -18,12 +18,19 @@ public class RapierStationSlotLayoutProvider extends AbstractStationSlotLayoutPr
 
     @Override
     protected void addLayouts() {
-        defineModifiable(TiCItemRegistry.RAPIER)
+        defineModifiable(TiCItemRegistry.RAPIER.get())
         .sortIndex(SORT_WEAPON)
-        .addInputItem(TinkerToolParts.smallBlade, 10, 22)
+        .addInputItem(TiCItemRegistry.SLENDER_BLADE.get(), 10, 22)
         .addInputItem(TinkerToolParts.largePlate, 33, 44)
         .addInputItem(TinkerToolParts.toughHandle, 33, 64)
         .addInputItem(TinkerToolParts.toolHandle, 53, 64)
+        .build();
+        
+        defineModifiable(TiCItemRegistry.ESTOC.get())
+        .sortIndex(SORT_WEAPON)
+        .addInputItem(TiCItemRegistry.SLENDER_BLADE.get(), 15, 26)
+        .addInputItem(TinkerToolParts.toughHandle, 33, 44)
+        .addInputItem(TinkerToolParts.toolHandle, 51, 62)
         .build();
     }
 

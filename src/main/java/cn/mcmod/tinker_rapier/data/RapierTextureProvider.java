@@ -10,7 +10,10 @@ public class RapierTextureProvider extends AbstractPartSpriteProvider{
 
     @Override
     protected void addAllSpites() {
+        addHead("slender_blade");
+        
         buildTool("rapier").addBreakableHead("blade").addBinding("guard_cup").addHandle("guard").addHandle("handle");
+        buildTool("estoc").addBreakableHead("blade").addHandle("guard_estoc").addHandle("handle");
     }
 
     @Override

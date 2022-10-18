@@ -27,16 +27,6 @@
     "gui" : {
       "rotation" : [ 0, 0, 90 ]
     },
-    "thirdperson_righthand" : {
-      "rotation" : [ 0, 90, 15 ],
-      "translation" : [ 0, 4.5, -1 ],
-      "scale" : [ 1, 1, 1 ]
-    },
-    "thirdperson_lefthand" : {
-      "rotation" : [ 0, -90, -15 ],
-      "translation" : [ 0, 4.5, -1 ],
-      "scale" : [ 1, 1, 1 ]
-    },
     "firstperson_righthand" : {
       "rotation" : [ 0, 90, -25 ],
       "translation" : [ 0, 2, 0.8 ],
